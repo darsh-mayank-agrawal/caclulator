@@ -19,13 +19,13 @@ calc.onclick = function () {
                 ans.innerHTML += num1 + num2
                 break
             case "sub":
-                ans.innerHTML += num1 - num2
+                ans.innerHTML += num1 > num2 ? num1 - num2 : num2 - num1
                 break
             case "mul":
                 ans.innerHTML += num1 * num2
                 break
             case "div":
-                ans.innerHTML += num1 / num2
+                ans.innerHTML += (num1 > num2 ? num1 / num2 : num2 / num1).toFixed(2)
                 break
             default:
                 alert("An error occurred :-(")
