@@ -13,19 +13,24 @@ calc.onclick = function () {
         let num1 = parseInt(input1.value)
         let num2 = parseInt(input2.value)
         let oper = operlist.value
-        switch (oper) 
-        {
+        switch (oper) {
             case "add":
                 ans.innerHTML += num1 + num2
                 break
             case "sub":
-                ans.innerHTML += num1 > num2 ? num1 - num2 : num2 - num1
+                if ((num1 - num2) < 0) {
+                    ans.innerHTML += num2 - num1
+                }
                 break
             case "mul":
                 ans.innerHTML += num1 * num2
                 break
             case "div":
-                ans.innerHTML += (num1 > num2 ? num1 / num2 : num2 / num1).toFixed(2)
+                if (num1 > num2) {
+                     ans.innerHTML += `Quotient: ${num1 / num2}\n Remainder: ${num1 % num2}`
+                } else if (num1 < num2) {
+                    ans.innerHTML += `Quotient: ${num2 / num1}\nRemainder: ${num2 % num1}`
+                }
                 break
             default:
                 alert("An error occurred :-(")
