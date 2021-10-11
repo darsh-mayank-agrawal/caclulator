@@ -26,13 +26,10 @@ calc.onclick = function () {
                 ans.innerHTML += num1 * num2
                 break
             case "div":
-                if (num1 == 0 || num2 == 0) {
-                    alert("Numbers can't be zero while dividing.")
-                    if (num1 > num2) {
-                        ans.innerHTML += `Q: ${num1 / num2} R: ${num1 % num2}`
-                    } else if (num1 < num2) {
-                        ans.innerHTML += `Q: ${num2 / num1} R: ${num2 % num1}`
-                    }
+                if (num1 > num2) {
+                     ans.innerHTML += num1 / num2
+                } else if (num1 < num2) {
+                    ans.innerHTML += num2 / num1
                 }
                 break
             default:
