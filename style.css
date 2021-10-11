@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* { 
+    font-family: 'Roboto';
+    text-align: center;
+}
+
+*:not(h1, strong, b) {
+    font-weight: 600;
+}
+
+h1 {
+    font-family: 'Dancing Script';
+}
+
+select {
+    padding: 2px;
+}
+
+input, select {
+    border: none;
+    border-radius: 2px;
+}
+
+#main {
+    background-color: #bbb;
+    margin: 0% 30% 0% 30%; 
+    padding: 50px 50px 50px 50px; 
+    border-radius: 10px;
+}
+
+div>* { 
+    margin: 10px 0px 10px 0px;
+}
+
+#calc { 
+    padding: 20px 40px 20px 40px;
+    color: #fff;
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 5px;
+}
