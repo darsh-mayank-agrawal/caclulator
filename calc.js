@@ -26,6 +26,9 @@ calc.onclick = function () {
                 ans.innerHTML += num1 * num2
                 break
             case "div":
+                if (num1 == 0 || num2 == 0) {
+                    alert("Numbers can't be zero while dividing.")
+                }
                 if (num1 > num2) {
                      ans.innerHTML += `Quotient: ${num1 / num2}\n Remainder: ${num1 % num2}`
                 } else if (num1 < num2) {
