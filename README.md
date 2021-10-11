@@ -1,4 +1,4 @@
-# Mini Project 1
+# Darsh's mini project 1
 
 This is my first mini-project.
 
